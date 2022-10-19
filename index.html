@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Text Input Sample</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    
+</head>
+<body class="light-mode">
+    <section>
+        <div class="container">
+            <div class="text">
+                <h2>RGB text input</h2>
+                <p>Default, Error & OK samples</p>
+                <button>
+                    <span class="light">Change to Light mode</span>
+                    <span class="dark">Change to Dark mode</span>
+                    <div class="color"></div>
+                </button>
+            </div>
+            <div class="form">
+                <div class="component">
+                    <div class="field">
+                        <input id="inpt" type="text" required>
+                        <label for="inpt">First Name</label>
+                        <div class="gradient"></div>
+                    </div>
+                    <p class="help-text">Write your first name without special characters</p>
+                </div>
+                <div class="component ok">
+                    <div class="field">
+                        <input id="inpt2" type="text" value="Lorem" required>
+                        <label for="inpt2">Middle Name</label>
+                        <div class="gradient"></div>
+                    </div>
+                    <p class="help-text">Write your middle name without special characters</p>
+                </div>
+                <div class="component error">
+                    <div class="field">
+                        <input id="inpt3" type="text" value="Lorem45"required>
+                        <label for="inpt3">Last Name</label>
+                        <div class="gradient"></div>
+                    </div>
+                    <p class="help-text error">Write your last name without special characters</p>
+                </div>
+                <div class="component">
+                    <div class="field">
+                        <input id="inpt4" type="text" required>
+                        <label for="inpt4">Phone number</label>
+                        <div class="gradient"></div>
+                    </div>
+                    <p class="help-text">Write your phone number without special characters</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="https://github.com/jozzzz128/rgbform" target="_blank">
+            <span class="icon-github"></span>
+            View code on GitHub    
+        </a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+@media screen and (max-width: 680px) {
+    body section .form{
+        grid-template-columns: auto !important;
+    }
+
+    body section .form .component{
+        max-width: 100% !important;
+    }
+}

@@ -1,0 +1,104 @@
+/*
+Project Name: RGB Input
+Description: This is an example of how to build a form that simulates RGB lights on the input borders
+Version: 1
+Author: jozzzz128
+Author URL: https://jozzzz128.com
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@100;400;500;700&family=Silkscreen:wght@400;700&display=swap');
+@import url('./css/icons.css');
+@import url('./css/animation.css');
+@import url('./css/responsive.css');
+@import url('./css/button.css');
+@import url('./css/input.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+:root{
+    /*OTHERS*/
+    --grid-row: calc(50% - 5px);
+    /*COLORS*/
+    --neutral: #ccc;
+    --yellow: rgba(252,176,69,1);
+    --red: rgba(253,29,29,1);
+    --green: rgba(40,195,34,1);
+    /*GRADIENTS*/
+    --def-gradient: linear-gradient(90deg, var(--yellow) 0%, var(--neutral) 50%, var(--neutral) 100%);
+    --ok-gradient: linear-gradient(0deg, var(--green) 0%, var(--green) 50%, var(--yellow) 100%);
+    --error-gradient: linear-gradient(90deg, var(--red) 0%, var(--red) 50%, var(--yellow) 100%);
+    --dark-gradient: linear-gradient(90deg, rgba(208,180,222,1) 0%, rgba(0,168,255,1) 100%);
+    --light-gradient: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+body{
+    background: #fff;
+    overflow-x: hidden;
+    transition: 0.2s;
+}
+
+body.dark-mode{
+    background: #333;
+}
+
+body.dark-mode *{
+    color: #fff;
+}
+
+body section{
+    width: 100vw;
+    min-height: calc(100vh - 66px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body section .container{
+    max-width: 90%;
+    height: auto;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+body section .container .text{
+    margin-bottom: 50px;
+}
+
+body section .container .text h2{
+    font-family: 'Silkscreen', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+body section .container .form{
+    display: grid;
+    grid-template-columns: var(--grid-row) var(--grid-row);
+    grid-gap: 10px;
+}
+
+body footer{
+    background: #191919;
+    padding: 20px;
+    text-align: center;
+}
+
+body footer a{
+    font-family: 'Open Sans';
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+body footer a span{
+    margin-right: 5px;
+    color: #fff;
+}

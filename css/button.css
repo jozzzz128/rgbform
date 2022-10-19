@@ -1,0 +1,51 @@
+body section .text button{
+    width: 300px;
+    position: relative;
+    padding: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    background: #45496d;
+    border: 0;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+body section .text button .color{
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    transition: linear 0.1s;
+}
+
+body section .text button:hover .color{
+    top: 0;
+}
+
+body.light-mode section .text button .color{
+    background: var(--light-gradient);
+}
+
+body.dark-mode section .text button .color{
+    background: var(--dark-gradient);
+}
+
+body section .text button span{
+    display: none;
+    font-size: 16px;
+    font-weight: bolder;
+    opacity: 0.6;
+    z-index: 2;
+    position: relative;
+}
+
+body.light-mode section .text button span.dark{
+    display: block;
+    color: #fff;
+}
+
+body.dark-mode section .text button span.light{
+    display: block;
+}
