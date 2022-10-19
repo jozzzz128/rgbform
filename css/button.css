@@ -32,20 +32,27 @@ body.dark-mode section .text button .color{
     background: var(--dark-gradient);
 }
 
-body section .text button span{
+body section .text button p{
     display: none;
     font-size: 16px;
     font-weight: bolder;
     opacity: 0.6;
     z-index: 2;
     position: relative;
-}
-
-body.light-mode section .text button span.dark{
-    display: block;
     color: #fff;
+    align-items: center;
 }
 
-body.dark-mode section .text button span.light{
-    display: block;
+body.light-mode section .text button p.dark{
+    display: inline-flex;
+}
+
+body.dark-mode section .text button p.light{
+    display: inline-flex;
+}
+
+body section .text button p span{
+    color: #fff;
+    display: inline-block;
+    margin-right: 10px;
 }
